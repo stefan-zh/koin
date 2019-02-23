@@ -57,6 +57,9 @@ dependencies {
 	implementation(platform("org.springframework.boot:spring-boot-dependencies:2.1.3.RELEASE"))
 	implementation("org.springframework.boot:spring-boot-starter-web")
 
+	// Google Guava
+	implementation("com.google.guava:guava:19.0")
+
 	// Spring Boot Test
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "junit", module = "junit")
