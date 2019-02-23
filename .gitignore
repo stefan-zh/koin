@@ -1,3 +1,6 @@
+.gradle
+build
+out
 node_modules
 .nyc_output
 coverage
