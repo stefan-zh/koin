@@ -11,6 +11,6 @@ data class TxOutput(
 
     // to address or change address
     @NotBlank
-    @Size(min = 128, max = 128) // 1 byte = 2 hex characters, 64 bytes
+    @Size(min = 64, max = 64)
     val address: String
 )
