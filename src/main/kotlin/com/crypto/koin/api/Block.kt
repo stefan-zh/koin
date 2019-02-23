@@ -14,12 +14,12 @@ data class Block(
 
     // hash taken from the contents of the block: sha256 (index + previousHash + timestamp + nonce + transactions)
     @NotBlank
-    @Size(min = 128, max = 128)
+    @Size(min = 64, max = 64)
     val hash: String?,
 
     // hash of previous block, first block is 0
     @NotBlank
-    @Size(min = 128, max = 128)
+    @Size(min = 64, max = 64)
     val previousHash: String,
 
     val timestamp: Timestamp,

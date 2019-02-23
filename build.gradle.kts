@@ -57,6 +57,13 @@ dependencies {
 	implementation(platform("org.springframework.boot:spring-boot-dependencies:2.1.3.RELEASE"))
 	implementation("org.springframework.boot:spring-boot-starter-web")
 
+	// adds support for serialization/deserialization of Kotlin classes and data classes:
+	// https://github.com/FasterXML/jackson-module-kotlin
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.7")
+
+	// Kotlin logging
+	implementation("io.github.microutils:kotlin-logging:1.6.25")
+
 	// Google Guava
 	implementation("com.google.guava:guava:19.0")
 
