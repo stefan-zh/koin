@@ -15,8 +15,8 @@ data class Wallet(
 
     @NotBlank
     @Size(min = 1024, max = 1204)
-    val secret: String,
+    var secret: String? = null,
 
     @Valid
-    val keyPairs: List<WalletKeyPair>
+    var keyPairs: List<WalletKeyPair> = emptyList()
 )
