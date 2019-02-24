@@ -4,5 +4,7 @@ import javax.validation.constraints.Min
 
 data class WalletKeyPair(
     @Min(0)
-    val index: Int
+    val index: Int,
+
+    val publicKey: String
 )
